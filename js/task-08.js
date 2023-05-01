@@ -26,12 +26,15 @@
 
 const form = document.querySelector(".login-form");
 form.addEventListener("submit", (e) =>{
-e.preventDefault()
+e.preventDefault();
 // console.log(e)
 // console.log(e.target.elements.email.value)
 const data = {
     email: e.target.elements.email.value,
     password: e.target.elements.password.value,
 }
-console.log(data)
+// console.log(data)
+if(email.value === "" || password.value ===""){
+return alert("Всі поля мають бути заповнені");
+}
 })
