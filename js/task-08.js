@@ -17,4 +17,9 @@ const data = {
     password: password.value,
 }
 console.log(data);
+  e.target.reset();
 })
+
+
+
+
